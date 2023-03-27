@@ -1,0 +1,14 @@
+$corDeFundo: #040714;
+$corTextoPrincipal: silver;
+$corTextoSecundario: #f9f9f9;
+
+@mixin text($fonteSize: 16px) {
+  font-size: $fonteSize;
+  line-height: $fonteSize + 10px;
+  color: $corTextoPrincipal;
+}
+
+@mixin title($fonteSize: 40px) {
+  @include text($fonteSize);
+  color: $corTextoSecundario;
+}
