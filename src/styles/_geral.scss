@@ -1,5 +1,12 @@
+// GERAL
+
+body {
+  background-color: $corDeFundo;
+}
+
 // FONTES
 // TEXTOS
+
 @font-face {
   font-family: Avenir;
   src: url(../../assets/fonts/Avenir-Regular.woff2);
@@ -41,11 +48,4 @@
 
 .title--small {
   @include title(28px);
-}
-
-// GERAL
-
-body {
-  background-color: $corDeFundo;
-  font-family: Avenir, sans-serif;
 }
