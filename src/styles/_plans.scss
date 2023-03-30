@@ -16,7 +16,9 @@
     margin-top: 50px;
 
     @media (max-width: 768px) {
-      display: block;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
     }
 
     &__item {
@@ -25,14 +27,28 @@
       max-width: 380px;
       width: 100%;
 
+      @media (max-width: 426px) {
+        padding: 40px 24px 44px;
+        max-width: 100%;
+      }
+
       &:nth-child(2) {
         background-image: url(../images/fundo_combo_plus.png);
         background-repeat: no-repeat;
         background-size: contain;
+
+        @media (max-width: 426px) {
+          margin-bottom: -60px;
+        }
       }
 
       img {
         height: 83px;
+
+        @media (max-width: 426px) {
+          height: auto;
+          max-width: 100%;
+        }
       }
 
       strong {
